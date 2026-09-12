@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurtep - Servicios</title>
+    <link rel="shortcut icon" href="Imagen/Nurtep - Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Imagen/Nurtep - Logo.png" alt="Nurtep Logo" class="logo-img">
+                </a>
+            </div>
+
+            <div class="nav-right-controls">
+                <button class="hamburger" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <ul class="nav-links">
+                <li class="lang-item">
+                    <label class="lang-pill-switch" title="Cambiar idioma / Switch language">
+                        <input type="checkbox" id="lang-toggle" aria-label="Cambiar idioma">
+                        <div class="lang-pill-slider">
+                            <div class="lang-thumb"></div>
+                            <i class="fa-solid fa-globe lang-icon-globe"></i>
+                            <span class="lang-option es">ES</span>
+                            <span class="lang-option en">EN</span>
+                        </div>
+                    </label>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="services.html" class="active">Servicios</a></li>
+                <li><a href="project.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2><i class="fa-solid fa-helmet-safety"></i> Nuestros Servicios de Obra Civil</h2>
+            <div class="about-block">
+                <p>En Nurtep ofrecemos soluciones integrales para el sector industrial, comercial y residencial, garantizando la máxima eficiencia, control y calidad en cada etapa de la construcción.</p>
+            </div>
+            
+            <div class="about-block">
+                <h3><i class="fa-solid fa-trowel-bricks"></i> Construcción y Acabados</h3>
+                <ul>
+                    <li>Obra Ligera</li>
+                    <li>Remodelación</li>
+                    <li>Pintura</li>
+                    <li>Piso</li>
+                    <li>Cimentación</li>
+                    <li>Estructura</li>
+                </ul>
+                
+                <h3><i class="fa-solid fa-screwdriver-wrench"></i> Instalaciones Especializadas</h3>
+                <ul>
+                    <li>Instalación Eléctrica</li>
+                    <li>Instalación Hidráulica</li>
+                    <li>Instalación Sanitaria</li>
+                    <li>Instalación HVAC (Aire Acondicionado y Ventilación)</li>
+                    <li>Instalación Mecánica</li>
+                </ul>
+                
+                <h3><i class="fa-solid fa-shield-halved"></i> Sistemas de Seguridad y Oficios</h3>
+                <ul>
+                    <li>Sistema Contra Incendios</li>
+                    <li>Herrería</li>
+                    <li>Carpintería</li>
+                    <li>Cancelería</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nurtep, S.A. de C.V. - Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="tel:6646664984" aria-label="Teléfono"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:admon@nurtep.com" aria-label="Correo"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/6646664984" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/nurtepmx" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nurtepmx" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@nurtepmx" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/company/nurtep" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://maps.app.goo.gl/4R6QVnASwms2UgBv8?g_st=ac" target="_blank" aria-label="Ubicación"><i class="fa-solid fa-location-dot"></i></a>
+        </div>
+    </footer>
+
+    <div id="nurty-chatbot" class="nurty-widget">
+      <div id="nurty-box" class="nurty-box">
+        <div class="nurty-header">
+          <div class="nurty-avatar-header">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="nurty-info">
+            <h4>Nurty</h4>
+            <span>Asistente Virtual Nurtep</span>
+          </div>
+          <button id="nurty-close" class="nurty-close" aria-label="Cerrar chat">&times;</button>
+        </div>
+
+        <div id="nurty-messages" class="nurty-messages">
+          <div class="message bot">
+            ¡Hola! Soy <strong>Nurty</strong>, tu asistente de confianza en Nurtep. ¿En qué te puedo ayudar hoy sobre tu proyecto industrial o de construcción?
+          </div>
+        </div>
+
+        <div class="nurty-input-area">
+          <input type="text" id="nurty-input" placeholder="Escribe tu duda aquí..." autocomplete="off">
+          <button id="nurty-send" aria-label="Enviar mensaje"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+
+      <button id="nurty-toggle" class="nurty-toggle-btn" aria-label="Abrir asistente Nurty">
+        <i class="fa-solid fa-robot nurty-icon"></i>
+        <span class="nurty-pulse"></span>
+      </button>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
